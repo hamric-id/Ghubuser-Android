@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Ghubuser" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- You can leave it empty, or add your original color configuration -->
+    </style>
+</resources>

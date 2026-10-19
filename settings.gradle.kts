@@ -24,4 +24,10 @@ dependencyResolutionManagement {
 
 rootProject.name = "Ghubuser"
 include(":app")
- 
+include(":core:common")
+include(":core:database")
+include(":core:network")
+include(":data")
+include(":domain")
+include(":feature:users")
+include(":feature:detail_user")
