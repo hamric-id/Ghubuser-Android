@@ -2,6 +2,7 @@ package com.hamric.ghubuser.di
 
 import com.hamric.core.common.DefaultDispatchersProvider
 import com.hamric.core.common.DispatchersProvider
+import com.hamric.domain.usecase.FetchDetailUserUseCase
 import com.hamric.domain.usecase.FetchUsersUseCase
 import com.hamric.domain.usecase.ObserveCachedUsersUseCase
 import com.hamric.domain.usecase.ObserveAndFilterCachedUsersUseCase
@@ -15,4 +16,5 @@ val appModule = module{
     factory { FetchUsersUseCase(get()) }
     factory { ObserveAndFilterCachedUsersUseCase(get()) }
     factory { SearchUsersUseCase(get()) }
+    factory { FetchDetailUserUseCase(get()) }
 }

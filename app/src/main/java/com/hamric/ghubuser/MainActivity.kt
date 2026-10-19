@@ -13,6 +13,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.hamric.core.network.BuildConfig
+import com.hamric.feature.detail_user.DetailUserScreen
 import com.hamric.feature.users.UsersScreen
 import com.hamric.ghubuser.ui.theme.GhubuserTheme
 
@@ -29,7 +30,8 @@ class MainActivity : ComponentActivity() {
                 NavHost(navController, startDestination = "users") {
                     composable("users") { UsersScreen(navController) }
                     composable("detail/{login}") { backStackEntry ->
-                        //call DetailUserScreen
+                        val login = backStackEntry.arguments?.getString("login").orEmpty()
+                        DetailUserScreen(login)
                     }
                 }
             }
