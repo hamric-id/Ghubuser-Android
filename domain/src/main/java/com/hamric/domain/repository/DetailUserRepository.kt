@@ -6,6 +6,6 @@ import kotlinx.coroutines.flow.Flow
 
 interface DetailUserRepository {
     fun observeCachedDetailUser(login: String) : Flow<DetailUser?>
-    suspend fun fetchAndCacheDetailUser(login: String): Resource<DetailUser>
+    suspend fun fetchDetailUser(login: String): Resource<DetailUser>
     suspend fun touch(login: String)
 }

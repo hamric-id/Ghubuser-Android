@@ -51,6 +51,7 @@ dependencies {
     implementation(project(":domain"))
     implementation(project(":data"))
     implementation(project(":feature:users"))
+    implementation(project(":feature:detail_user"))
 
     implementation(libs.material)
     implementation(platform(libs.androidx.compose.bom))

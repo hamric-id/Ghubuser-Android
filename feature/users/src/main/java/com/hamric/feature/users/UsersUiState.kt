@@ -10,9 +10,7 @@ data class UsersUiState(
     val isLoadingMore: Boolean = false,
     val error: String? = null,
     val isEmpty: Boolean = false,
-    val endReached: Boolean = false,
-    val sortOrder: SortOrder = SortOrder.ASC
+    val endReached: Boolean = false
 ){
     enum class Mode { LIST, SEARCH }
-    enum class SortOrder{ ASC, DESC }
 }
